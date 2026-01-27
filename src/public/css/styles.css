@@ -1,0 +1,315 @@
+/*  Mobile First  */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background-color: #efefef;
+    background: url("../images/diagonal-striped-brick.png");
+
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .12);
+    background-color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    background-image: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2em;
+    padding: 2%;
+    font-weight: bold;
+    margin-top: 1.1rem;
+}
+
+.nav-btn {
+    padding: 1%;
+}
+
+.nav-btn:hover {
+    background-image: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+main {
+    grid-column: 1/4;
+    grid-row: 2 / 3;
+    margin-top: 10%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .12);
+    border: 0.2px solid rgba(0, 0, 0, .12);
+    text-align: center;
+}
+
+.section-content {
+    text-align: center;
+    padding: 1%;
+    margin-top: 1%;
+    font-size: 1.4em;
+}
+
+#welcome-tag {
+    font-size: 1.5em;
+    background-image: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 4/4;
+    text-align: center;
+    padding: 0.3%;
+    font-weight: bolder;
+}
+
+#rocket-img {
+    display: inline;
+    margin-top: 1%;
+    width: 100px;
+}
+
+#home-img {
+    width: 1.2em;
+}
+
+.contact-form {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    border: 2px solid rgba(0, 0, 0, .12);
+    border-radius: 10%;
+}
+
+.contact-form input {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.contact-form label {
+    padding: 2%;
+    font-size: 1.1em;
+}
+
+.form-btn {
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 20%;
+    background-color: rgb(159, 232, 250);
+    margin-bottom: 0.5%;
+
+}
+
+.form-btn:hover {
+    background-color: rgb(97, 163, 239);
+    color: white;
+}
+
+
+.service-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-left: 1px solid rgba(0, 0, 0, .12);
+    padding: 0.5%;
+    font-size: 1em;
+}
+
+.service-number {
+    background-image: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.customers-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .12);
+
+}
+
+.customer-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
+.customer-comment {
+    padding: 0.4%;
+    font-size: 1em;
+}
+
+.customer-pic {
+    border-radius: 30%;
+}
+
+.customer-detail {
+    font-size: 0.5em;
+}
+
+@media all and (min-width: 768px) {
+
+
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    main {
+        grid-row: 2/2;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .nav-btns {
+        font-size: 2em;
+    }
+
+    .section-content {
+        font-size: 2.5em;
+    }
+
+    #welcome-tag {
+        font-size: 2.8em;
+    }
+
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+
+    main {
+        grid-row: 2/2;
+        margin-top: 3%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .nav-btns {
+        font-size: 1.9em;
+    }
+
+    .section-content {
+        font-size: 1.5em;
+    }
+
+    #welcome-tag {
+        font-size: 2.1em;
+    }
+
+    .contact-form {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .contact-form label {
+        font-size: 0.8em;
+        margin-top: 0.2%;
+        padding: 0.2%;
+    }
+
+    .form-btn {
+        margin-top: 0.5%;
+        padding: 0.5%;
+    }
+
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    main {
+        grid-row: 2/3;
+        margin-top: 3%;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .nav-btns {
+        font-size: 1.7em;
+    }
+
+    .section-content {
+        font-size: 1.8em;
+    }
+
+    #welcome-tag {
+        font-size: 2.1em;
+    }
+
+    .contact-form {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .contact-form label {
+        font-size: 0.8em;
+        margin-top: 0.2%;
+        padding: 0.2%;
+    }
+
+    .form-btn {
+        margin-top: 0.5%;
+        padding: 0.5%;
+    }
+
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (min-width: 912px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+}
