@@ -3,7 +3,7 @@
 ## Creative Agency Web
 
 A simple website using only front-end concepts,part of the EBAC course **"Javascript Fullstack"**.The website simulates the site of an agency that works with web design and developing websites for others companies or people.
-The main goal was to create a website fulli responsive for all sorts of devices.
+The main goal was to create a website fully responsive for all sorts of devices.
 
 ### How does it Work
 
