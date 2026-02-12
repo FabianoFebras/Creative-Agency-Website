@@ -1,0 +1,33 @@
+@use "mixins";
+@use "variables";
+.main-content {
+  grid-column: 1/4;
+  grid-row: 2 / 3;
+  margin-top: 10%;
+  background-color: white;
+  @include mixins.gray-shadow;
+  border: 0.2px solid rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.section-content {
+  text-align: center;
+  padding: 1%;
+  margin-top: 1%;
+  font-size: variables.$main-content-font;
+}
+
+.welcome-tag {
+  font-size: 1.5em;
+  @include mixins.gradient-text;
+}
+
+.rocket-img {
+  display: inline;
+  margin-top: 1%;
+  width: 100px;
+}
+
+.home__icon {
+  font-size: variables.$main-content-font;
+}

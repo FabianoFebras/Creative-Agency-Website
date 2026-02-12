@@ -1,0 +1,36 @@
+@use "mixins";
+
+header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+  @include mixins.gray-shadow;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  @include mixins.gradient-text;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.2em;
+  padding: 2%;
+  font-weight: bold;
+  margin-top: 1.1rem;
+
+  &__item {
+    padding: 1%;
+  }
+  &__item:hover {
+    @include mixins.gradient-text;
+  }
+}
+
+.home__icon {
+  width: 1.2em;
+}

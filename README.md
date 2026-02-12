@@ -36,6 +36,15 @@ Open the `home.html` file in your browser to run the project.
             ├── reset.css
             ├── styles.css
         ├── images
+        ├── sass
+            ├── _contactForm.scss
+            ├── _customers.scss
+            ├── _header.scss
+            ├── _mainContent.scss
+            ├── _mixins.scss
+            ├── _service.scss
+            ├── main.scss
+            ├── variables.scss
 ├── .gitignore
 └── README.md
 ```
@@ -78,6 +87,15 @@ Abra o arquivo `home.html`no browser para rodar o projeto.
             ├── reset.css
             ├── styles.css
         ├── images
+        ├── sass
+            ├── _contactForm.scss
+            ├── _customers.scss
+            ├── _header.scss
+            ├── _mainContent.scss
+            ├── _mixins.scss
+            ├── _service.scss
+            ├── main.scss
+            ├── variables.scss
 ├── .gitignore
 └── README.md
 ```

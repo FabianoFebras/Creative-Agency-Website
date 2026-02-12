@@ -1,0 +1,12 @@
+@use "mixins";
+
+.service__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 1.1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.5%;
+  font-size: 1em;
+}
+
+.service__number {
+  @include mixins.gradient-text;
+}

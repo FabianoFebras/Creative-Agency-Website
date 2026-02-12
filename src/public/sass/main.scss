@@ -1,0 +1,158 @@
+@use "contactForm";
+@use "customers.scss";
+@use "header.scss";
+@use "mainContent.scss";
+@use "service";
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #efefef;
+  background: url("../images/diagonal-striped-brick.png");
+}
+
+footer {
+  grid-column: 1/4;
+  grid-row: 4/4;
+  text-align: center;
+  padding: 0.3%;
+  font-weight: bolder;
+}
+
+/* MEDIA QUERY */
+
+@media all and (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .main-content {
+    grid-row: 2/2;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .nav__item {
+    font-size: 2em;
+  }
+
+  .section-content {
+    font-size: 2.5em;
+  }
+
+  .welcome-tag {
+    font-size: 2.8em;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+  }
+
+  .main-content {
+    grid-row: 2/2;
+    margin-top: 3%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nav__item {
+    font-size: 1.9em;
+  }
+
+  .section-content {
+    font-size: 1.5em;
+  }
+
+  .welcome-tag {
+    font-size: 2.1em;
+  }
+
+  .contact {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .contact__label {
+    font-size: 0.8em;
+    margin-top: 0.2%;
+    padding: 0.2%;
+  }
+
+  .contact__btn {
+    margin-top: 0.5%;
+    padding: 0.5%;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .main-content {
+    grid-row: 2/3;
+    margin-top: 3%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nav__item {
+    font-size: 1.7em;
+  }
+
+  .section-content {
+    font-size: 1.8em;
+  }
+
+  .welcome-tag {
+    font-size: 2.1em;
+  }
+
+  .contact {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .contact__label {
+    font-size: 0.8em;
+    margin-top: 0.2%;
+    padding: 0.2%;
+  }
+
+  .contact__btn {
+    margin-top: 0.5%;
+    padding: 0.5%;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media all and (min-width: 912px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+  }
+}
